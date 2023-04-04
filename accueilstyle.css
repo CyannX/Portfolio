@@ -79,7 +79,7 @@ li.btntop:hover a {
 }
 .menugenre {
   display: flex;
-  width: 90%;
+  width: 1200px;
   margin: auto;
   flex-wrap: wrap;
 }
