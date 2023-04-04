@@ -1,0 +1,210 @@
+/* générale */
+
+html {
+  font-family: raleway;
+  min-height: 100%;
+}
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backgris {
+  background-color: rgb(65, 65, 65);
+}
+.projectcolor {
+  color: rgb(255, 230, 0);
+}
+body {
+  min-height: 100%;
+  background-image: linear-gradient(
+    -40deg,
+    rgb(250, 235, 98) -10%,
+    rgb(143, 143, 143) 70%
+  );
+  background-color: rgb(226, 226, 226);
+  background-image: url(./img/fondfeuille.jpg);
+  background-size: cover;
+}
+/* topheader */
+
+header {
+  background-color: rgb(59, 59, 59);
+  box-shadow: 0 0 15px rgb(59, 59, 59);
+  background-image: linear-gradient(
+    to right,
+    rgb(190, 190, 190) -30%,
+    rgb(59, 59, 59) 80%
+  );
+}
+nav {
+  min-height: 10vh;
+  display: flex;
+}
+nav ul {
+  display: flex;
+  flex: 0.1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+nav div {
+  display: flex;
+  flex: 2 1 40rem;
+}
+li.btntop {
+  list-style-type: none;
+  font-size: 20px;
+}
+img.logo {
+  padding: 15px;
+}
+h1.titre {
+  font-size: 30px;
+  color: rgb(255, 230, 0);
+  padding: 20px;
+  text-shadow: 0 0 3px rgb(255, 230, 0);
+}
+li.btntop a {
+  color: rgb(255, 230, 0);
+  text-decoration: none;
+  text-shadow: 0 0 3px rgb(255, 230, 0);
+}
+li.btntop:hover a {
+  transition: 0.3s ease;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* body */
+
+.table {
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* leftpart */
+
+#leftcontent {
+  margin: auto;
+  width: 600px;
+  margin-bottom: 50px;
+}
+.galerie {
+  display: flex;
+  width: 600px;
+  overflow: hidden;
+}
+.photo4 {
+  animation-duration: 20s;
+  animation-name: defilement4;
+  animation-iteration-count: infinite;
+}
+@keyframes defilement4 {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-600px);
+  }
+  50% {
+    transform: translate(-1200px);
+  }
+  75% {
+    transform: translate(-1800px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+.photo3 {
+  animation-duration: 20s;
+  animation-name: defilement3;
+  animation-iteration-count: infinite;
+}
+@keyframes defilement3 {
+  0% {
+    transform: translate(0);
+  }
+  33% {
+    transform: translate(-600px);
+  }
+  66% {
+    transform: translate(-1200px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+/* rightpart */
+
+#rightcontent {
+  width: 600px;
+  margin: auto;
+  margin-top: 0;
+}
+#description {
+  width: 80%;
+  margin: auto;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgb(175, 175, 175);
+  padding: 15px;
+  background-color: rgb(240, 240, 240);
+}
+.titreannonce {
+  margin-top: 0px;
+}
+.description {
+  font-size: large;
+  margin: 20px;
+}
+
+/* achat */
+
+#purchase {
+  margin: auto;
+  margin-top: 30px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgb(175, 175, 175);
+  background-color: rgb(240, 240, 240);
+}
+#purchase button {
+  padding: 15px;
+  width: 350px;
+  height: 51px;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 15px;
+  box-shadow: 7px 7px 5px rgb(214, 214, 214);
+  cursor: pointer;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+}
+#purchase button:hover {
+  transition-duration: 0.3s;
+  background-image: linear-gradient(
+    to right,
+    rgb(190, 190, 190) -90%,
+    rgb(59, 59, 59) 70%
+  );
+  color: rgb(255, 230, 0);
+  box-shadow: 7px 7px 5px rgb(170, 170, 170);
+  border-bottom: none;
+  border-right: none;
+  text-shadow: 5px 5px 10px rgb(255, 230, 0);
+}
+.prix {
+  width: 100%;
+  margin-top: 0;
+}

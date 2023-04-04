@@ -1,0 +1,176 @@
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html {
+  font-family: raleway;
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+  background-image: linear-gradient(
+    -40deg,
+    rgb(250, 235, 98) -10%,
+    rgb(143, 143, 143) 70%
+  );
+  background-color: rgb(226, 226, 226);
+  background-image: url(./img/fondfeuille.jpg);
+  background-size: cover;
+}
+.tophead {
+  background-color: rgb(59, 59, 59);
+  box-shadow: 0 0 15px rgb(59, 59, 59);
+  background-image: linear-gradient(
+    to right,
+    rgb(190, 190, 190) -30%,
+    rgb(59, 59, 59) 80%
+  );
+}
+footer {
+  color: white;
+}
+nav {
+  min-height: 10vh;
+  display: flex;
+}
+nav ul {
+  display: flex;
+  flex: 0.1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+nav div {
+  display: flex;
+  flex: 2 1 40rem;
+}
+li.btntop {
+  list-style-type: none;
+  font-size: 20px;
+}
+img.logo {
+  padding: 15px;
+}
+h1.titre {
+  font-size: 30px;
+  color: rgb(255, 230, 0);
+  padding: 20px;
+  text-shadow: 0 0 3px rgb(255, 230, 0);
+}
+li.btntop a {
+  color: rgb(255, 230, 0);
+  text-decoration: none;
+  text-shadow: 0 0 3px rgb(255, 230, 0);
+}
+li.btntop:hover a {
+  transition: 0.3s ease;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.boite_annonce {
+  display: flex;
+  flex-wrap: wrap;
+}
+.annonce {
+  border-radius: 20px;
+  border: 1px solid rgb(59, 59, 59);
+  display: block;
+  background-color: rgb(255, 255, 255);
+  margin: 20px;
+  max-height: 650px;
+  max-width: 432px;
+}
+.annonce_img img {
+  object-fit: contain;
+  padding: 15px;
+  border-radius: 15px;
+}
+.annonce:hover {
+  transition: 0.3s ease;
+  transform: scale(1.05);
+}
+.annonce_txt {
+  min-height: 150px;
+  max-height: 150px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 80%;
+  margin: auto;
+  padding: 10%;
+  padding-top: 10px;
+}
+.titre_annonce {
+  margin: 10%;
+  margin-top: 0px;
+}
+.bouton_achat {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  box-sizing: 20px;
+  border-color: black;
+  padding: 10px;
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 5px black;
+  justify-content: center;
+}
+.bouton_achat:hover {
+  transition: 0.3s;
+  background-color: rgb(59, 59, 59);
+  color: rgb(255, 230, 0);
+  text-shadow: 5px 5px 10px rgb(255, 230, 0);
+  box-shadow: 5px 5px 6px rgb(0, 0, 0);
+  background-image: linear-gradient(
+    to right,
+    rgb(190, 190, 190) -90%,
+    rgb(59, 59, 59) 70%
+  );
+}
+.boutique {
+  border-radius: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  background-image: url(./img/fondbois.jpg);
+  background-size: cover;
+  margin: 3% 3% 0;
+}
+.boutique h1 {
+  color: white;
+}
+.bordurerecherche {
+  width: 550px;
+  border-radius: 17px;
+  border: 1px solid rgb(59, 59, 59);
+  margin-top: 15px;
+}
+.tailleicone {
+  height: 50px;
+  width: 50px;
+  border-radius: 15px 0 0 15px;
+}
+.recherche {
+  height: 50px;
+  width: 380px;
+  font-size: 18px;
+  color: rgb(59, 59, 59);
+  font-weight: bold;
+  padding: 0 0 0 15px;
+  outline: 0;
+}
+.backgris {
+  background-color: rgb(65, 65, 65);
+}
+.bordernone {
+  border: none;
+}
+.boutonrecherche {
+  height: 50px;
+  width: 120px;
+  color: rgb(255, 230, 0);
+  cursor: pointer;
+  border-radius: 0 15px 15px 0;
+  font-weight: bold;
+}
