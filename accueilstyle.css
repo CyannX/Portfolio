@@ -79,8 +79,9 @@ li.btntop:hover a {
 }
 .menugenre {
   display: flex;
-  width: 1200px;
+  width: 90%;
   margin: auto;
+  flex-wrap: wrap;
 }
 .phraseaccroche {
   color: rgb(0, 0, 0);
