@@ -28,7 +28,8 @@ body {
   );
 }
 footer {
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 nav {
   min-height: 10vh;

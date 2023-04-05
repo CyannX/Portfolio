@@ -1,0 +1,223 @@
+/* generale */
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexleft {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+html {
+  min-height: 100%;
+  font-family: raleway;
+}
+span {
+  font-family: none;
+}
+body {
+  margin: 0;
+}
+.bgcolor {
+  background-image: linear-gradient(-40deg, #fcebb2 20%, #d9ded8 100%);
+}
+.container {
+  padding: 0 20px 20px;
+  border: 0;
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-image: linear-gradient(to right, #f83600 20%, #f9d423 90%) 1;
+  animation-duration: 1s;
+  animation-name: appcontainer;
+  animation-iteration-count: 1;
+  box-shadow: 0 10px 8px rgb(153, 153, 153);
+  font-weight: bold;
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container p {
+  min-width: 100%;
+}
+.parttitle {
+  font-weight: 600;
+  text-decoration: underline;
+  margin: 20px 0 10px 50px;
+}
+.descripphoto {
+  font-size: 20px;
+}
+iframe {
+  width: 100%;
+  min-height: 1000px;
+}
+.lien {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 15px;
+  margin: 15px;
+}
+.lien:hover {
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
+.fa-solid {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+.fa-brands {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+/* header */
+
+.headcolor {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+header {
+  height: 150px;
+  border-width: 0px;
+  border-style: solid;
+  border-bottom-width: 4px;
+  border-image: linear-gradient(to right, #f83600 0%, #f9d423 80%) 1;
+}
+#logohead {
+  margin: 20px;
+}
+#logohead h1 {
+  margin-left: 20px;
+}
+.pdp {
+  width: 100px;
+  border-radius: 9999px;
+}
+
+/* main/description */
+
+#presentation {
+  width: 100%;
+  margin-top: 180px;
+  display: flex;
+  align-items: center;
+}
+#leftpart {
+  width: 50%;
+}
+#descriptionperso {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  height: 450px;
+  border-radius: 25px;
+  border: 1px solid rgb(153, 153, 153);
+  box-shadow: 8px 8px 7px rgb(153, 153, 153);
+  animation-duration: 1s;
+  animation-name: appdescrip;
+  animation-iteration-count: 1;
+}
+#descriptionperso p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px;
+  height: auto;
+  color: rgb(0, 0, 0);
+}
+
+/* main/photo */
+
+#rightpart {
+  width: 50%;
+  display: flex;
+}
+#fondphoto {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  background-image: linear-gradient(130deg, #f83600 20%, #f9d423 90%);
+}
+#bordurfond {
+  width: 490px;
+  height: 490px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+}
+#mainphoto {
+  animation-duration: 1s;
+  animation-name: appphoto;
+  animation-iteration-count: 1;
+  transform: translateY(-145px);
+}
+#firstcontain {
+  animation-duration: 1s;
+  animation-name: appcont1;
+  animation-iteration-count: 1;
+  background-image: url(./img/backgroundphoto.png);
+  color: white;
+  background-size: cover;
+}
+#secondcontain {
+  animation-duration: 1.5s;
+  animation-name: appcont2;
+  animation-iteration-count: 1;
+  background-image: url(./img/backgroundvideo.png);
+  color: white;
+  background-size: cover;
+}
+#thirdcontain {
+  min-height: 1000px;
+  animation-duration: 2s;
+  animation-name: appcont3;
+  animation-iteration-count: 1;
+  color: white;
+  background-color: #737373;
+}
+#firstcontain a {
+  background-color: #00a841;
+}
+#secondcontain a {
+  background-color: #b701ff;
+}
+@keyframes appphoto {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+@keyframes appdescrip {
+  0% {
+    transform: translateX(-200px) scale(0.8);
+    opacity: 0;
+  }
+}
+@keyframes appcont1 {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+@keyframes appcont2 {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+@keyframes appcont3 {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}

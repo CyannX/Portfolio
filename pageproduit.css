@@ -208,3 +208,7 @@ li.btntop:hover a {
   width: 100%;
   margin-top: 0;
 }
+footer {
+  color: black;
+  font-weight: bold;
+}

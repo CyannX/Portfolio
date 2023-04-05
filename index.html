@@ -1,68 +1,140 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="accueilstyle.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-  rel="stylesheet"
-/>
-<html>
+<html lang="fr" class="bgcolor">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ShoesRider-accueil</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/51ea57e268.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>PortFolio-Marius</title>
   </head>
-
-  <header>
-    <nav>
-      <div>
-        <a href="index.html">
-          <img class="logo" src="./img/logo.jpg" alt="" width="100px" />
-        </a>
-        <h1 class="titre">ShoesRider</h1>
+  <body class="">
+    <header class="headcolor flexcenter">
+      <div id="logohead" class="flexcenter">
+        <img class="pdp" src="./img/pdp.jpg" alt="photo de profile" />
+        <h1>Mon PortFolio</h1>
       </div>
-      <ul>
-        <li class="btntop">
-          <a href="index.html">Accueil</a>
-        </li>
-        <li class="btntop">
-          <a href="nopage.html">Nous contacter</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <body>
-    <div class="boiteaffiche">
-      <img src="./img/afficheaccueil.jpg" alt="" height="" />
-    </div>
-    <div class="phraseaccroche">
-      <p>
-        <center>
-          <b class="phraseaccroche">
-            Que vous soyer sportif, chic, casual ou audacieux, nous avons les
-            chaussures qu'il vous faut !
-          </b>
-        </center>
-      </p>
-    </div>
-    <div class="menugenre">
-      <div class="categorie">
-        <a href="boutique-femme.html"><img src="./img/accueilfemme.jpg" /></a>
+    </header>
+    <main id="presentation">
+      <div id="leftpart">
+        <div id="descriptionperso" class="flexcenter">
+          <p class="flexcenter">
+            Salut, moi c'est Marius. À l'âge de 9ans j'ouvre ma première chaîne
+            youtube où je réalisais des tutos de magie, puis à l'âge de 12ans je
+            réalise mon premier montage vidéo avec un téléphone. Aujourd'hui je
+            réalise des montages et animations 3D plus complexe avec Davinci
+            résolve. J'ai égalemment ouvert mon compte instagramme de
+            photographie afin de me familiariser avec les notions techniques de
+            la photo (iso/vitesse d'obturation/ouverture) et d'exposer ma
+            progréssion. J'ai aussi appris les bases dans les languages html et
+            css.
+          </p>
+        </div>
       </div>
-      <div class="categorie">
-        <a href="boutique-homme.html">
-          <img src="./img/accueilhomme.jpg" width="400px" height="400px" />
-        </a>
+      <div id="rightpart" class="flexcenter">
+        <div id="fondphoto" class="flexcenter">
+          <div id="bordurfond" class="flexcenter">
+            <img
+              id="mainphoto"
+              src="./img/photomoi.png"
+              alt="photo de Marius"
+            />
+          </div>
+        </div>
       </div>
-      <div class="categorie">
-        <a href="boutique-enfant.html"><img src="./img/accueilenfant.jpg" /></a>
+    </main>
+    <main id="partphoto">
+      <h1 id="titrephoto" class="parttitle">
+        Photo <i class="fa-solid fa-camera" style="color: #00a841"></i>
+      </h1>
+      <div id="firstcontain" class="container">
+        <p class="descripphoto">
+          Découvrez ici ma progression en photographie sur mon compte instagram.
+          Mon matériel: Appareil photo Lumix Panasonic FZ82 et téléphone Realme
+          8. Mes logiciels Photoshop, Lightroom.
+        </p>
+        <a
+          class="lien"
+          href="https://instagram.com/maptgrapher?igshid=ZDdkNTZiNTM="
+          target="_blank"
+          >Mon Instagram</a
+        >
       </div>
-    </div>
+    </main>
+    <main id="partvideo">
+      <h1 id="titrevideo" class="parttitle">
+        Video <i class="fa-solid fa-film" style="color: #b701ff"></i>
+      </h1>
+      <div id="secondcontain" class="container">
+        <p class="descripphoto">
+          Découvrez l'évolution de mes compétances de montage vidéo et animation
+          3D grace à ma chaîne youtube. Mes logiciels: Davinci résolve.
+        </p>
+        <a href="https://youtube.com/@CyannX342" class="lien" target="_blank"
+          >Ma chaîne Youtube</a
+        >
+      </div>
+    </main>
+    <main id="partcode">
+      <h1 id="titrecode" class="parttitle">
+        HTML <i class="fa-brands fa-html5" style="color: #ff6600"></i>/CSS
+        <i class="fa-brands fa-css3-alt" style="color: #005eff"></i>
+      </h1>
+      <div id="thirdcontain" class="container">
+        <p class="descripphoto">
+          Voici un exemple de site internet que j'ai codé. Mes logiciels: Visual
+          studio code, Canva, font awesome, google fonts.
+        </p>
+        <iframe src="accueil.html" frameborder="1"></iframe>
+      </div>
+    </main>
+    <footer>
+      <div id="logiciel">
+        <h1 id="titrelogiciel">Mes logiciels et équipements</h1>
+        <div id="logicielcard">
+          <div class="card" id="photoshop">
+            <img src="./img/logoPs.png" alt="" />
+            <h2>Photoshop</h2>
+          </div>
+          <div class="card" id="lightroom">
+            <img src="./img/logoLr.png" alt="" />
+            <h2>Lightroom</h2>
+          </div>
+          <div class="card" id="camera">
+            <img src="./img/logocamera.png" alt="" />
+            <h2>Lumix fz82</h2>
+          </div>
+          <div class="card" id="davinci">
+            <img src="./img/logo davinci.png" alt="" />
+            <h2>Davinci résolve</h2>
+          </div>
+          <div class="card" id="vscode">
+            <img src="./img/logo vscode.png" alt="" />
+            <h2>Visual studio code</h2>
+          </div>
+        </div>
+      </div>
+      <div id="contact">
+        <h1 id="titrecontact">Me contacter</h1>
+        <div id="liencontact">
+          <a href="mailto:ma.deschaume@gmail.com"
+            >Mail: ma.deschaume@gmail.com</a
+          >
+          <a href="tel:+33666478743">Tel: 06 66 47 87 43</a>
+          <a href="https://instagram.com/maptgrapher?igshid=ZDdkNTZiNTM="
+            >Instagram: @MaPtGrapher</a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
-
-  <footer>
-    <p>&copy; 2023 Marius</p>
-  </footer>
 </html>
