@@ -105,9 +105,11 @@ header {
   margin-top: 180px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 #leftpart {
   width: 50%;
+  margin-bottom: 200px;
 }
 #descriptionperso {
   margin: auto;
@@ -133,6 +135,7 @@ header {
 
 #rightpart {
   width: 50%;
+  min-width: 490px;
   display: flex;
 }
 #fondphoto {
@@ -274,6 +277,7 @@ footer {
 #liencontact {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 #liencontact a {
   text-decoration: none;
@@ -283,6 +287,7 @@ footer {
   padding: 10px;
   border-radius: 15px;
   border: 1px solid white;
+  margin-bottom: 15px;
 }
 #liencontact a:hover {
   transition: 0.3s ease;
