@@ -183,6 +183,9 @@ header {
 #secondcontain a {
   background-color: #b701ff;
 }
+#thirdcontain p {
+  margin: 30px 0 30px;
+}
 @keyframes appphoto {
   0% {
     transform: translateY(50px);
